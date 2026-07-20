@@ -1,0 +1,41 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.ai-coustics.com/models/get-started/authenticate-apps
+docs: https://docs.ai-coustics.com/models/get-started/authenticate-apps
+summary:
+  types: [licenseKey, jwt, http-basic]
+  description: >-
+    The ai-coustics SDK authenticates with a license (SDK) key on trusted
+    servers, or with short-lived JWTs minted from your backend for untrusted
+    clients. JWTs are issued by a token-minting endpoint protected with HTTP
+    Basic auth using the SDK api_key as the username and an empty password.
+schemes:
+  - name: sdkLicenseKey
+    type: apiKey
+    in: sdk-config
+    description: >-
+      Self-service SDK license key generated in the developer platform
+      (developers.ai-coustics.com). Credential format is `<payload>.<signature>`
+      where the payload is base64-encoded JSON with fields user, version and
+      api_key. Embed directly in trusted server environments.
+    source: https://developers.ai-coustics.com/
+  - name: jwtBearer
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
+    description: >-
+      Short-lived JWT dropped in exactly where a license key would be used, for
+      untrusted client-side apps. Carries an `exp` claim (Unix seconds), ~1 hour
+      TTL. Refresh proactively via the processor's update_bearer_token() without
+      recreating the processor or reloading the model.
+  - name: tokenMintBasicAuth
+    type: http
+    scheme: basic
+    description: >-
+      HTTP Basic auth used to call the token-minting endpoint. The SDK api_key is
+      the username; the password is empty.
+    token_endpoint: https://api.ai-coustics.io/v1/sdk/tokens
+    response_fields: [token, expires_at]
+notes:
+  - The legacy REST API (api-key based, single call voice enhancement) was sunset in 2026; migrate to the SDK.
+  - Offline entitlements in JWT licenses were added in SDK 0.21.1 (2026-06-26).
