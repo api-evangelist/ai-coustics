@@ -1,0 +1,41 @@
+# ai-coustics Docs
+
+> Unlock Audio Intelligence with the ai-coustics SDK
+
+## Docs
+
+- [Changelog](https://docs.ai-coustics.com/changelog.md): Product updates and announcements
+- [Overview](https://docs.ai-coustics.com/index.md): The ai-coustics SDK enables developers to turn raw, unpredictable audio into stable, machine-ready input for Voice AI systems.
+- [Batch Call Analysis with Tyto](https://docs.ai-coustics.com/models/audio-insight/batch-call-analysis.md): Score a folder of call recordings with the Tyto audio-insight model and explore the results in the call-analysis dashboard.
+- [Tyto](https://docs.ai-coustics.com/models/audio-insight/tyto.md): Predict and diagnose downstream failures in Voice AI stacks from the incoming audio stream.
+- [Authenticate Apps](https://docs.ai-coustics.com/models/get-started/authenticate-apps.md): Authenticate the SDK with a license key on trusted servers, or with short-lived JWTs minted from your backend on untrusted clients.
+- [LiveKit Quickstart](https://docs.ai-coustics.com/models/get-started/livekit-quickstart.md): Learn how to use the ai-coustics plugin in your LiveKit voice agents for real-time speech enhancement.
+- [OpenTelemetry](https://docs.ai-coustics.com/models/get-started/opentelemetry.md): Export SDK operational metrics to your own observability backend via OpenTelemetry.
+- [Pipecat Quickstart](https://docs.ai-coustics.com/models/get-started/pipecat-quickstart.md): Learn how to use the ai-coustics filter in your Pipecat applications for real-time speech enhancement.
+- [Pricing](https://docs.ai-coustics.com/models/get-started/pricing.md): Understanding the pricing plans for the ai-coustics SDK
+- [SDK Quickstart](https://docs.ai-coustics.com/models/get-started/sdk-quickstart.md): Real-time speech enhancement with Quail and Rook on the ai-coustics SDK.
+- [Deprecated Models](https://docs.ai-coustics.com/models/older-models/deprecated-models.md): Guide to migrating away from deprecated models.
+- [Model Naming Changes](https://docs.ai-coustics.com/models/older-models/model-naming-changes.md): Guide to migrating model names from legacy SDK enums to standalone model file IDs.
+- [Rook](https://docs.ai-coustics.com/models/perceptual-speech-enhancement/rook.md): Perceptual speech enhancement for natural-sounding human conversation.
+- [Quail](https://docs.ai-coustics.com/models/speech-enhancement/quail.md): Speech enhancement that improves Speech-to-Text accuracy for Voice AI.
+- [Speech Enhancement for Voice AI Systems](https://docs.ai-coustics.com/models/speech-enhancement/speech-enhancement-for-voice-ai-systems.md): Improving the performance of Voice AI Agents and STT systems.
+- [Quail VAD](https://docs.ai-coustics.com/models/voice-activity-detection/quail-vad.md): Detect speech in real-time audio streams with Quail VAD.
+- [Quail Voice Focus](https://docs.ai-coustics.com/models/voice-focus/quail-voice-focus.md): Primary-speaker isolation for Voice AI.
+- [Voice Focus for Voice AI Systems](https://docs.ai-coustics.com/models/voice-focus/voice-focus-for-voice-ai-systems.md): Improving STT accuracy with Quail Voice Focus.
+- [AirTen](https://docs.ai-coustics.com/reference/concepts/airten.md): Proprietary real-time neural network inference engine powering all SDK implementations.
+- [Audio Format](https://docs.ai-coustics.com/reference/concepts/audio-format.md): How the SDK processes audio streams.
+- [Latency](https://docs.ai-coustics.com/reference/concepts/latency.md): Understand output delay in the SDK and how to minimize it.
+- [Performance](https://docs.ai-coustics.com/reference/concepts/performance.md): Learn more about the SDK's runtime performance.
+- [SDK Telemetry](https://docs.ai-coustics.com/reference/concepts/sdk-telemetry.md): What telemetry the SDK sends and what it never sends.
+- [Migrate Python SDK 1.3 to 2.0](https://docs.ai-coustics.com/reference/deprecated/python-1-3-to-2-0.md): Upgrade to ai-coustics Python SDK 2.0 with the new model architecture, renamed parameters, and updated processing behavior.
+- [SDK 0.13+ Key System](https://docs.ai-coustics.com/reference/deprecated/sdk-0-13-key-system.md): FAQ for SDK 0.13 and the new key system.
+- [Compatibility Matrix](https://docs.ai-coustics.com/reference/sdk/compatibility-matrix.md): Compatibility matrix for core SDK, language bindings, and model file versions.
+- [Examples](https://docs.ai-coustics.com/reference/sdk/examples.md): Browse example code for the ai-coustics SDK across all supported languages.
+- [Language Bindings](https://docs.ai-coustics.com/reference/sdk/language-bindings.md): Official ai-coustics SDK bindings for each language.
+- [C](https://docs.ai-coustics.com/reference/sdk/language-bindings/c.md)
+- [C++](https://docs.ai-coustics.com/reference/sdk/language-bindings/cpp.md)
+- [Node.js](https://docs.ai-coustics.com/reference/sdk/language-bindings/nodejs.md)
+- [Python](https://docs.ai-coustics.com/reference/sdk/language-bindings/python.md)
+- [Rust](https://docs.ai-coustics.com/reference/sdk/language-bindings/rust.md)
+- [WebAssembly](https://docs.ai-coustics.com/reference/sdk/language-bindings/wasm.md)
+- [Models](https://docs.ai-coustics.com/reference/sdk/models.md): Detailed look at the models offered by the ai-coustics SDK

@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.ai-coustics.com/
+authentication:
+  style: license-key-or-jwt
+  ref: authentication/ai-coustics-authentication.yml
+  detail: >-
+    License (SDK) key on trusted servers; short-lived JWT bearer tokens on
+    untrusted clients, minted from a backend via HTTP Basic auth to
+    api.ai-coustics.io/v1/sdk/tokens.
+token_refresh:
+  supported: true
+  mechanism: processor.update_bearer_token()
+  detail: >-
+    JWTs carry an exp claim (Unix seconds), ~1h TTL. Refresh proactively before
+    expiry without recreating the processor or reloading the model.
+idempotency:
+  supported: false
+  note: SDK is a real-time streaming audio processor, not a mutating REST resource API; no idempotency-key contract.
+versioning:
+  scheme: semver
+  compatibility_matrix: https://docs.ai-coustics.com/reference/sdk/compatibility-matrix
+  detail: SDK core, per-language bindings, and model file IDs are versioned and matched via a published compatibility matrix.
+observability:
+  opentelemetry: true
+  ref: https://docs.ai-coustics.com/models/get-started/opentelemetry
+  detail: SDK operational metrics can be exported to your own observability backend via OpenTelemetry.
+telemetry:
+  ref: https://docs.ai-coustics.com/reference/concepts/sdk-telemetry
+  detail: Documents what telemetry the SDK sends and what it never sends.
+audio_format:
+  ref: https://docs.ai-coustics.com/reference/concepts/audio-format
+  detail: Streams processed in real time; latency and audio-format concepts are documented separately.

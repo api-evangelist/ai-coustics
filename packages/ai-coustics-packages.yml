@@ -1,0 +1,47 @@
+generated: '2026-07-17'
+method: searched
+source: npm, PyPI, crates.io, github.com/ai-coustics
+packages:
+  - language: python
+    registry: pypi
+    name: aic-sdk
+    version: 2.5.0
+    url: https://pypi.org/project/aic-sdk/
+    install: pip install aic-sdk
+    repository: https://github.com/ai-coustics/aic-sdk-py
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@ai-coustics/aic-sdk"
+    version: 0.20.0
+    url: https://www.npmjs.com/package/@ai-coustics/aic-sdk
+    install: npm install @ai-coustics/aic-sdk
+    repository: https://github.com/ai-coustics/aic-sdk-node
+    license: Apache-2.0
+    official: true
+  - language: rust
+    registry: crates.io
+    name: aic-sdk
+    version: 0.21.4
+    url: https://crates.io/crates/aic-sdk
+    install: cargo add aic-sdk
+    repository: https://github.com/ai-coustics/aic-sdk-rs
+    official: true
+  - language: c
+    registry: github
+    name: aic-sdk-c
+    url: https://github.com/ai-coustics/aic-sdk-c
+    install: "download release from github.com/ai-coustics/aic-sdk-c"
+    license: Apache-2.0
+    official: true
+  - language: cpp
+    registry: github
+    name: aic-sdk-cpp
+    url: https://github.com/ai-coustics/aic-sdk-cpp
+    install: "download release from github.com/ai-coustics/aic-sdk-cpp"
+    official: true
+  - language: wasm
+    registry: github
+    name: aic-sdk (WebAssembly binding)
+    url: https://docs.ai-coustics.com/reference/sdk/language-bindings/wasm
+    official: true

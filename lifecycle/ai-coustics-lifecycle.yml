@@ -1,0 +1,34 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.ai-coustics.com/changelog
+versioning:
+  scheme: semver
+  current: 0.21.3
+  docs: https://docs.ai-coustics.com/reference/sdk/compatibility-matrix
+  notes: >-
+    SDK core, language bindings, and model file versions are tracked in a
+    published compatibility matrix. Python bindings are versioned separately
+    (2.5.0).
+deprecation:
+  policy_url: https://docs.ai-coustics.com/models/older-models/deprecated-models
+  model_naming_changes: https://docs.ai-coustics.com/models/older-models/model-naming-changes
+  migration_guides:
+    - https://docs.ai-coustics.com/reference/deprecated/python-1-3-to-2-0
+    - https://docs.ai-coustics.com/reference/deprecated/sdk-0-13-key-system
+  sunset:
+    - what: Legacy REST API (file upload/download + webhook callbacks)
+      status: sunset
+      migrate_to: https://docs.ai-coustics.com/
+      evidence: https://github.com/ai-coustics/api-tutorials (archived 2026-03-16)
+status_page: https://status.ai-coustics.com/
+status_page_provider: Better Stack
+status_components:
+  - ai-coustics.com
+  - Developer Portal (developers.ai-coustics.com)
+  - Developer docs (docs.ai-coustics.com)
+  - Model Registry (artifacts.ai-coustics.io)
+  - JWT Token Minting
+  - SDK Authentication
+sla:
+  note: Custom SLAs offered on the Enterprise plan.
+  url: https://ai-coustics.com/pricing

@@ -1,0 +1,38 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.ai-coustics.com/changelog
+scheme: semver
+current_version: 0.21.3
+entries:
+  - version: 0.21.3
+    date: '2026-07-03'
+    breaking: false
+    highlights:
+      - "Windows MSVC: shipped aic.dll (x86_64 and arm64) now statically links the MSVC C runtime."
+      - "Apple releases now include xcframework bundles for multiple platforms."
+  - version: 0.21.2
+    date: '2026-06-30'
+    breaking: false
+    highlights:
+      - "Added Windows GNU/LLVM release targets (x86_64-pc-windows-gnullvm, aarch64-pc-windows-gnullvm)."
+  - version: 0.21.1
+    date: '2026-06-26'
+    breaking: false
+    highlights:
+      - "New offline entitlements support in JWT licenses."
+  - version: 0.21.0
+    date: '2026-06-22'
+    breaking: false
+    highlights:
+      - "Introduced aic_vad_context_get_raw_vad_probability() API."
+      - "Reduced output delay for variable frame processing."
+  - version: 0.20.0
+    date: '2026-06-11'
+    breaking: false
+    highlights:
+      - "Added the Tyto audio-intelligence model with new Collector and Analyzer concepts for thread-safe audio buffering and analysis."
+  - version: 0.19.3
+    date: '2026-06-09'
+    breaking: false
+    highlights:
+      - "Bug fix: resolved Android startup crash."

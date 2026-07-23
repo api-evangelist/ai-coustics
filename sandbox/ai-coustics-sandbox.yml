@@ -1,0 +1,19 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.ai-coustics.com/models/get-started/pricing
+free_trial:
+  description: 30 days of unlimited SDK access at no cost, no credit card required, production testing permitted.
+  signup: https://developers.ai-coustics.com/signup
+playground:
+  name: SDK Playground
+  url: https://developers.ai-coustics.com/dashboard/sdk/playground
+  description: In-dashboard playground to try the SDK models.
+  demo: HuggingFace demo referenced in docs.
+keys:
+  description: >-
+    Self-service SDK license keys are generated in the developer platform.
+    Untrusted clients use short-lived JWTs minted from your backend rather than
+    shipping the license key.
+  token_endpoint: https://api.ai-coustics.io/v1/sdk/tokens
+notes:
+  - No published magic/test credentials or card numbers (not a payments API); testing is done with real trial keys.
