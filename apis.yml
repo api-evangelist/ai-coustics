@@ -10,6 +10,17 @@ description: >-
   WebAssembly, plus LiveKit and Pipecat integrations. Authentication uses self-service license keys or
   short-lived JWTs; a legacy REST API was sunset in favor of the SDK. Backed by Partech.
 url: https://raw.githubusercontent.com/api-evangelist/ai-coustics/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
