@@ -54,7 +54,7 @@ tags:
 - Speech Recognition
 - SDK
 - Real-Time
-- Machine-Learning
+- Machine Learning
 tags_raw:
 - Company
 - Ai/Ml
@@ -65,6 +65,7 @@ tags_raw:
 - SDK
 - Real-Time
 - Machine Learning
+- Machine-Learning
 apis:
 - name: ai-coustics SDK
   description: >-
