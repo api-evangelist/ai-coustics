@@ -1,0 +1,52 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://ai-coustics.com/pricing
+sources:
+- https://ai-coustics.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: On-prem SDK deployment
+  managed_tier: Startup
+published: true
+note: Annual billing prices also shown ($1,620/$4,320/$6,480 per year); 'Save 10%' annual toggle. Minutes-based
+  inclusions per tier.
+plan_count: 4
+currency: USD
+plans:
+- name: Startup
+  price_text: $135 /month
+  price: 135
+  currency: USD
+  period: month
+  included_quota: 100,000 minutes per month; All core SDK models included; Real-time processing (<30 ms);
+    100+ languages; On-prem SDK deployment; Community Discord support
+- name: Pro
+  price_text: $360 /month
+  price: 360
+  currency: USD
+  period: month
+  included_quota: 300,000 minutes per month; All core SDK models included; Real-time processing (<30 ms);
+    100+ languages; On-prem SDK deployment; Priority email support
+- name: Business
+  price_text: $540 /month
+  price: 540
+  currency: USD
+  period: month
+  included_quota: 500,000 minutes per month; Custom benchmarks; On-prem SDK deployment; Priority email
+    support; Dedicated Slack channel
+- name: Enterprise
+  price_text: Starting at $2000/month
+  price: 2000
+  currency: USD
+  period: month
+  included_quota: Everything in Business plus custom SLAs, dedicated engineering support, offline or air-gapped
+    license options
